@@ -1,4 +1,4 @@
-
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <!-- navigation -->
 <nav class="h-14 flex justify-around items-center shadow-md overflow-hidden">
   <div class="-mx-16 xl:-mx-5 sm:mx-0 flex h-9 w-9">
@@ -14,9 +14,16 @@
     
   </div>
   <div class="absolute visible sm:invisible inset-x-4">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
+    <div x-data="{open:false}" class="flex justify-start">
+      <svg @click="open=!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- <div x-show="open" @click.away="open=false" class="self-start p-10 h-32 w-14 h-full flex flex-col translate-y-24 bg-green-500" x-transition:enter="" x-transition:leave="">
+        <div>Home</div>
+        <div>Services</div>
+        <div>Contact-us</div>
+      </div> -->
+    </div>
   </div>
   <div class="sm:invisible visible mr-32 -translate-x-52 sm:-translate-x-16 mb-1 h-9 w-9">
     <a href="/">

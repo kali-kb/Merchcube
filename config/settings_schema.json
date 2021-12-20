@@ -1,10 +1,10 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Themekit template theme",
+    "theme_name": "MerchCube",
     "theme_version": "1.0.0",
-    "theme_author": "Shopify",
-    "theme_documentation_url": "https://github.com/Shopify/themekit",
+    "theme_author": "kali-kb",
+    "theme_documentation_url": "https://github.com/kali-kb/MerchCube",
     "theme_support_url": "https://github.com/Shopify/themekit/issues"
   }
 ]
